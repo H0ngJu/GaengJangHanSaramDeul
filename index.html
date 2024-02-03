@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>interactive-web-example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>굉장한<span>사람들</span></h1>
+
+    <ul class="auto">
+      <li class="btnStart">
+        <i class="fas fa-play"></i>
+      </li>
+      <li class="btnStop">
+        <i class="fas fa-pause"></i>
+      </li>
+    </ul>
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="title">
+            <div class="con">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="daegil">
+            <div class="con">
+              <h2 class="daegil_h2">김대길</h2>
+              <p class="daegil_p">개발 분야: JAVA 백엔드 개발</p>
+              <p class="daegil_p">MBTI: INFP(I 80%, F 51%, N 80%)</p>
+              <p class="daegil_p">넷플 뭐봄?: LEON(레옹)</p>
+              <p class="daegil_p">깃허브 아이디: mong3125</p>
+              <p class="daegil_p">삶의 낙: 힐링여행</p>
+              <p class="daegil_p">거창한 목표: 다국적 인터넷 제국 건국</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="nana">
+            <div class="con">
+              <h2 class="nana_h2">김&nbsp;나&nbsp;녕&nbsp;이</h2>
+              <p class="nana_p">개발 분야: <br>
+                웹 백엔드, 블록체인</p>
+              <p class="nana_p">MBTI: E N T P</p>
+              <p class="nana_p">추천 드라마:고려거란전쟁</p>
+              <p class="nana_p">깃허브 아이디: Nyu0Kim</p>
+              <p class="nana_p">삶의 낙: 사극 및 무협드라마 보기</p>
+              <p class="nana_p">거창한 목표: 이재용에게 직접 삼성 노트북 협찬받기</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="hye">
+            <div class="con">
+              <h2 class="daegil_h2">장혜원</h2>
+              <p class="daegil_p">개발 분야: 백엔드 개발</p>
+              <p class="daegil_p">MBTI: INFJ</p>
+              <p class="daegil_p">넷플 뭐봄?: 도시남녀의 사랑법</p>
+              <p class="daegil_p">깃허브 아이디: janghw0126</p>
+              <p class="daegil_p">삶의 낙: 환승연애...🥹</p>
+              <p class="daegil_p">거창한 목표: 일론머스크 팔로우받기</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="swiper-slide">
+            <div class="inner">
+              <div class="hongju">
+                <div class="con">
+                  <h2 class="daegil_h2">이홍주</h2>
+                  <p class="daegil_p">개발 분야: 웹(React)/앱(Flutter)</p>
+                  <p class="daegil_p">MBTI: ENFP</p>
+                  <p class="daegil_p">넷플 뭐봄?: 중경삼림</p>
+                  <p class="daegil_p">깃허브 아이디: H0ngJu</p>
+                  <p class="daegil_p">삶의 낙: 영화 뵈</p>
+                  <p class="daegil_p">거창한 목표: 돈많은 백수되기</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script>
+    var swiper = new Swiper(".wrap", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      loop: true,
+      centeredSlides: true,
+      speed: 1000,
+      direction: "horizontal",
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: -100,
+        depth: 400,
+        modifier: 1,
+        sideShadows: false,
+      },
+    });
+  </script>
+</body>
+
+</html>
